@@ -19,7 +19,7 @@ const makeSelection = (items, type) => {
     {
       type: 'list',
       name: 'selected',
-      message: `Which ${type} do you want to open?`,
+      message: `🐢 Which ${type} do you want to open?`,
       choices: names,
     },
   ])
@@ -32,7 +32,7 @@ const makeSelection = (items, type) => {
 
 const checkMatches = (items, type) => {
   if (!items.length) {
-    console.log("Hmm, looks like we couldn't find anything. Try a different keyword")
+    console.log("🐢 Hmm, looks like we couldn't find anything. Try a different keyword")
   } else if (items.length > 1) {
      makeSelection(items, type)
   } else {
@@ -52,7 +52,6 @@ const parseHTML = (data, keyword, type) => {
 
 program
   .description('open a Frontend Turing lesson or project')
-  .command('open')
   .argument('<type>', 'type of resource searching for [p]roject or [l]esson')
   .argument('[keyword]', 'a keyword in the title of the project you are looking for')
   .action((type, keyword) => {
