@@ -1,0 +1,32 @@
+{
+  "name": "turing-projects-clt",
+  "version": "1.0.0",
+  "description": "A command line tool to grab project info",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkiernan12/turing-projects-clt.git"
+  },
+  "author": "John Kiernan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jkiernan12/turing-projects-clt/issues"
+  },
+  "homepage": "https://github.com/jkiernan12/turing-projects-clt#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "better-opn": "^3.0.1",
+    "conf": "^10.1.1",
+    "css-select": "^4.1.3",
+    "dom-serializer": "^1.3.2",
+    "got": "^11.8.3",
+    "htmlparser2": "^7.2.0",
+    "inquirer": "^8.2.0"
+  },
+  "bin": {
+    "turtool": "index.js"
+  }
+}
