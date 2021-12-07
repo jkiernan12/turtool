@@ -1,23 +1,24 @@
-# TurTool 🐢
+# TurTools 🐢
 
 Turing School command line tool: open up front-end lessons and project specs.
 
 ## Description
 
-Why spend five minutes doing something manually when you can spend five hours automating it? That was my mantra when working on this mini-project. I was sick and tired of searching for lesson plans and project specs, so I decided to waste a day writing a command line tool that did it for me. Of course, I had the pleasure of learning a little about command line libraries (Commander and Inquirer) and web scraping along the way. Maybe not a total waste of time???
+Why spend five minutes doing something manually when you can spend five hours automating it? That was my mantra when working on this mini-project. I was sick and tired of searching for lesson plans and project specs, so I decided to waste some time writing a command line tool that did it for me. Of course, I had the pleasure of learning a little about command line libraries (Commander and Inquirer) and web scraping along the way. Maybe not a total waste of time???
 
 ## Getting Started
 
 ### Installing
 
 * Clone down the repo
-* Navigate into the local repo, and enter `npm init -g`
+* Navigate into the local repo, and enter `npm install -g`
 * Rejoice
 
 ### Executing program
 
 * Pull up lessons with `turtool l KEYWORD`  or `turtool lesson KEYWORD`
 * Pull up projects with `turtool p KEYWORD` or `turtool project KEYWORD`
+* The keyword should be something in the title of the project/lesson
 * Ex: `turtool p rancid` or `turtool lesson sass`
 
 ## Tech

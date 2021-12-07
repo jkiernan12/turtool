@@ -9,7 +9,7 @@ const inquirer = require("inquirer");
 const render = require('dom-serializer').default;
 
 const openPage = (items, type) => {
-  opn('https://frontend.turing.edu/' + type + 's/' + items[0].children[0].attribs.href)
+  opn('https://frontend.turing.edu/' + type + 's/' + items[0].children[0].attribs.href);
 }
 
 const makeSelection = (items, type) => {
@@ -32,11 +32,11 @@ const makeSelection = (items, type) => {
 
 const checkMatches = (items, type) => {
   if (!items.length) {
-    console.log("🐢 Hmm, looks like we couldn't find anything. Try a different keyword")
+    console.log("🐢 Hmm, looks like we couldn't find anything. Try a different keyword");
   } else if (items.length > 1) {
-     makeSelection(items, type)
+     makeSelection(items, type);
   } else {
-    openPage(items, type)
+    openPage(items, type);
   }
 }
 
@@ -45,9 +45,8 @@ const parseHTML = (data, keyword, type) => {
   let matchedItems = CSSselect.selectAll(`.${type}`, dom)
   .filter(el => {
     return render(el).toLowerCase().includes(keyword);
-    return el.children[0].children[0].data.toLowerCase().includes(keyword)
   })
-  checkMatches(matchedItems, type)
+  checkMatches(matchedItems, type);
 }
 
 program
@@ -58,12 +57,12 @@ program
     if (type === 'p' || type === 'project') {
       got('https://frontend.turing.edu/projects/')
       .then(res => {
-        parseHTML(res.body, keyword, 'project')
+        parseHTML(res.body, keyword, 'project');
     }) 
     } else if (type === 'l' || type === 'lesson') {
       got('https://frontend.turing.edu/lessons/')
       .then(res => {
-        parseHTML(res.body, keyword, 'lesson')
+        parseHTML(res.body, keyword, 'lesson');
     })
   }
 }

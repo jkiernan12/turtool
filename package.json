@@ -17,9 +17,7 @@
   },
   "homepage": "https://github.com/jkiernan12/turing-projects-clt#readme",
   "dependencies": {
-    "axios": "^0.24.0",
     "better-opn": "^3.0.1",
-    "conf": "^10.1.1",
     "css-select": "^4.1.3",
     "dom-serializer": "^1.3.2",
     "got": "^11.8.3",
